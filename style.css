@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+.main_nav {
+  background-color: rgb(40, 116, 240);
+}
+.logo_img {
+  height: 50px;
+  width: 100px;
+  float: left;
+}
+.search_container {
+  position: relative;
+}
+ul {
+  list-style-type: none;
+}
