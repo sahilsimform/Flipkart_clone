@@ -1,12 +1,21 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  font-family: arial, sans-serif;
+  text-decoration: none;
+  min-height: 140vh;
+  background-color: white;
+}
+
 .main_nav {
   background-color: rgb(40, 116, 240);
 }
 .logo_img {
-  height: 50px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   float: left;
 }
 .search_container {
