@@ -7,7 +7,10 @@ body {
   font-family: roboto, arial, sans-serif;
   text-decoration: none;
   min-height: 140vh;
+  font-size: 14px;
   background: #f1f3f6;
+  letter-spacing: 0px;
+  line-height: 1.5;
 }
 
 .none {
@@ -31,13 +34,18 @@ body {
   border-radius: 50%;
 }
 /* nav */
-.heading_navigation {
+
+.bg-primary {
+  background-color: #2874f0 !important;
+}
+
+/* .heading_navigation {
   background-color: #2874f0;
   height: 56px;
   position: sticky;
   top: 0;
   z-index: 2;
-}
+} */
 
 .nav_container {
   align-items: center;
@@ -184,6 +192,30 @@ body {
   padding-right: 22px;
 }
 
+.box_timer {
+  /* height: 100px; */
+  width: 90%;
+  margin: 100px;
+  border: 2px solid lightgray;
+  background-color: #fff;
+  justify-content: center;
+  min-height: 120px;
+  /* position: relative; */
+}
+
+.box_details {
+  margin-top: -100px !important;
+  width: 90%;
+  margin: 100px;
+  border: 2px solid lightgray;
+  background-color: #fff;
+  justify-content: center;
+  min-height: 120px;
+}
+.dis_top {
+  margin-top: -85px !important;
+}
+
 /* dropdown */
 .pointer {
   width: 20px;
@@ -283,21 +315,24 @@ more:hover .more_lan {
 .deals_of_the_day_text {
   position: relative;
   top: 5px;
-  left: 80px;
+  left: 30px;
 }
 
-.view_all {
+/* .view_all {
   position: absolute;
   right: 80px;
-}
+} */
 
 .btn_view_all {
   color: #fff;
+  left: 70%;
   border-radius: 2px;
   border: 1px solid #2874f0;
   background: #2874f0;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   height: 50px;
+  position: relative;
+  /* right: 80px; */
   width: 140px;
   padding: 10px 30px;
   font-weight: bold;
@@ -307,11 +342,11 @@ more:hover .more_lan {
   font-size: 16px;
 }
 
-.deals_of_the_day_items {
+/* .deals_of_the_day_items {
   justify-content: center;
   margin-top: 50px;
-}
-
+} */
+/*
 .deals_of_the_day_list {
   list-style: none;
   justify-content: space-around;
@@ -328,7 +363,7 @@ more:hover .more_lan {
     flex-wrap: wrap;
   }
 }
-
+*/
 .deals_of_the_day_item {
   padding: 10px 30px;
   cursor: pointer;
@@ -336,27 +371,28 @@ more:hover .more_lan {
 }
 
 .deals_of_the_day_item img {
-  width: 250px;
-  height: 300px;
+  /* width: 250px;
+  height: 300px; */
+  opacity: 1;
 }
 
 .deals_of_the_day_item .title {
   margin-top: 20px;
   font-weight: 550;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
 }
 
 .deals_of_the_day_item .price {
   margin-top: 20px;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 15px;
   color: rgb(111, 145, 89);
 }
 
 .deals_of_the_day_item .desc {
   margin-top: 20px;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 15px;
   color: rgb(160, 160, 160);
 }
