@@ -4,141 +4,217 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <nav class="main_nav">
-      <img
-        class="logo_img"
-        src="./media/flipkart.jpg"
-        alt="Flipkart logo"
-        title="Flipkart logo"
-      />
-      <div class="search_container">
-        <form action="#">
-          <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"></button>
-        </form>
-      </div>
-      <button type="">Login</button>
-
-      <div class="">
-        <button class="">More</button>
-        <div class="">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+    <!-- making the navigation with logo and search bar -->
+    <nav class="heading_navigation flex" id="navigation_heading">
+      <!-- making the nav container for max width -->
+      <div class="nav_container flex">
+        <div class="logo flex">
+          <a href="index.html" class="flip_logo"
+            ><img src="media/flipkart.png" alt="logo"
+          /></a>
         </div>
-      </div>
-      <div>
-        <a href="#"><i class=""></i> Cart</a>
+
+        <!-- making the searchbar -->
+        <div class="search_bar_container">
+          <div class="search_bar">
+            <form class="search flex">
+              <input
+                type="text"
+                placeholder="Search For products, brands and more"
+                class="search_box"
+              />
+              <button class="btn_search"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <!-- making the login button -->
+        <div class="login">
+          <a href="index.html" class="login_btn">login</a>
+          <div class="login_dropdown none">
+            <ul class="login_dropdown_list">
+              <li class="login_drop_li sign_li flex">
+                <p class="new_login">New customer</p>
+                <a href="index.html" class="sign_up">Sign Up</a>
+              </li>
+              <li class="login_drop_li">My Profile</li>
+              <li class="login_drop_li">Flipkart Plus Zne</li>
+              <li class="login_drop_li">Orders</li>
+              <li class="login_drop_li">Whislist</li>
+              <li class="login_drop_li">Rewards</li>
+              <li class="login_drop_li">Gift Cards</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- making the more button -->
+        <div class="more">
+          <span class="more_lan">More <i class="fa fa-angle-down"></i></span>
+          <div class="more_dropdown none">
+            <div class="pointer more_pointer"></div>
+            <ul class="more_dropdown_list">
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-bell"></i>Notification Preferences
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-shopping-basket"></i>Sell on Flipkart
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-question"></i>24X7 Customer Care
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-line-chart"></i>Advertise
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-download"></i>Download App
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- making the cart button -->
+        <div class="cart">
+          <span class="cart_lan"><i class="fa fa-shopping-cart"></i> Cart</span>
+        </div>
       </div>
     </nav>
 
-    <div>
-      <img src="#" /><br />
-      <h4>Top Offers</h4>
-
-      <img src="#" /><br />
-      <h4>Grocerl</h4>
-
-      <img src="#" /><br />
-      <h4>Mobile</h4>
-
-      <img src="#" /><br />
-      <h4>Fashion</h4>
-
-      <img src="#" /><br />
-      <h4>Electronic</h4>
-
-      <img src="#" /><br />
-      <h4>Home</h4>
-
-      <img src="#" /><br />
-      <h4>Applications</h4>
-
-      <img src="#" /><br />
-      <h4>Travel</h4>
-
-      <img src="#" /><br />
-      <h4>Beauty, Toys & More</h4>
+    <!-- making the heading categories -->
+    <div class="heading_categories flex">
+      <ul class="heading_category_list flex">
+        <li class="heading_category_items">
+          <img src="media/offer.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">Top Offers</p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/grocery.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">Grocery</p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/mobile.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">Mobiles</p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/fashion.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">
+            Fashion <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_category_items"></li>
+        <li class="heading_category_items">
+          <img src="media/electro.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">
+            Electronics <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/home.jpg" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">Home <i class="fa fa-angle-down"></i></p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/appls.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">
+            Appliances <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/travel.png" alt="loadinng image" class="cat_image" />
+          <p class="heading_item_name">Travel</p>
+        </li>
+        <li class="heading_category_items">
+          <img src="media/toys.png" alt="loading image" class="cat_image" />
+          <p class="heading_item_name">
+            Beauty, Toys & More <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+      </ul>
     </div>
 
-    <!-- Slider -->
-    <p>Slideshow 1:</p>
-    <div class="">
-      <div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-      </div>
+    <div class="deals_of_the_day flex">
+      <h2 class="deals_of_the_day_text">Deals of the Day</h2>
+      <button class="view_all btn_view_all">View All</button>
     </div>
 
-    <section>
-      <div class="">
-        <h3>Book and Music Instrument</h3>
-        <h5>Shop Now!</h5>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-        <div class="">
-          <img src="#" />
-          <h4>Cisco, fastrack</h4>
-          <h4>Upto 10% off</h4>
-        </div>
-      </div>
-    </section>
+    <div class="deals_of_the_day_items flex">
+      <ul class="deals_of_the_day_list flex">
+        <li class="deals_of_the_day_item">
+          <img src="media/saari.jpg" alt="saari" />
+          <p class="title">Sara,Divastri & More</p>
+          <p class="price">under 499&#x20B9;</p>
+          <p class="desc">Grab top selling sarees!</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/jacket.jpg" alt="jacket" />
+          <p class="title">Jackets,Sweatshirt & Sweater</p>
+          <p class="price">under 899&#x20B9;</p>
+          <p class="desc">Winter Essentials!</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/kidstshirt.jpg" alt="tshirt" />
+          <p class="title">Kids Dresaes, T-shirt & More</p>
+          <p class="price">under 299&#x20B9;</p>
+          <p class="desc">Triper SmartRaho & More</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/kurti.jpg" alt="tshirt" />
+          <p class="title">Stylish Collections</p>
+          <p class="price">from 199&#x20B9;</p>
+          <p class="desc">Kurtas & Kurtis</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/timex.jpg" alt="tshirt" />
+          <p class="title">Timex, Maxima & More</p>
+          <p class="price">from 799&#x20B9;</p>
+          <p class="desc">Best Product @799</p>
+        </li>
+      </ul>
+    </div>
 
-    <footer class=""></footer>
+    <div class="deals_of_the_day flex">
+      <h2 class="deals_of_the_day_text">Best in Electronics!</h2>
+      <button class="view_all btn_view-all">View All</button>
+    </div>
+
+    <div class="deals_of_the_day_items flex">
+      <ul class="deals_of_the_day_list flex">
+        <li class="deals_of_the_day_item">
+          <img src="media/cable.jpeg" alt="cable" />
+          <p class="title">Cabels Charger & More</p>
+          <p class="price">Starting from 129&#x20B9;</p>
+          <p class="desc">Shop now!</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/printer.jpeg" alt="cable" />
+          <p class="title">Top Rated Printer</p>
+          <p class="price">From 3445&#x20B9;</p>
+          <p class="desc">HP, EPSON & More</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/tripod.jpeg" alt="cable" />
+          <p class="title">Camera Tripods</p>
+          <p class="price">From 990&#x20B9;</p>
+          <p class="desc">Digitech,Kotak,PhotoPro</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/headphone.jpeg" alt="headphone" />
+          <p class="title">Redgear Headphone with 7.1 sorrund sound</p>
+          <p class="price">Just 1899&#x20B9;</p>
+        </li>
+        <li class="deals_of_the_day_item">
+          <img src="media/trimmer.jpeg" alt="trimmer" />
+          <p class="title">Best Trimmers!</p>
+          <p class="price">Upto 70% off</p>
+          <p class="desc">Philips, Nova & More</p>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
