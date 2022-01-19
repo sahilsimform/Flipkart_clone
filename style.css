@@ -602,12 +602,11 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* -webkit-user-select: none; */
   line-height: 1.4;
 }
 
 .img_card_banner {
-  width: auto !important;
+  width: 100% !important;
   height: 100% !important;
-  padding: 10px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
