@@ -219,6 +219,7 @@ body {
 
 .more_dropdown {
   right: 40px;
+  /* position: relative; */
 }
 
 .login_dropdown_list,
@@ -275,7 +276,7 @@ body {
 /* .login:hover .login_btn, */
 .more:hover .more_lan {
   position: relative;
-  top: 10px;
+  top: 7px;
 }
 
 .more_pointer {
@@ -285,6 +286,14 @@ body {
 .more_icon {
   width: 25px;
   color: #2874f1;
+}
+
+.more:hover .fa-angle-down::before {
+  content: "\f106";
+}
+
+.heading_item_name:hover .fa-angle-down::before {
+  content: "\f106";
 }
 
 .login:hover .login_dropdown,
