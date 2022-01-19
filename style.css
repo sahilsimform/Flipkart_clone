@@ -375,8 +375,8 @@ body {
   /* height: 100px; */
   /* width: 100%; */
   /*margin: 100px;
-  border: 2px solid lightgray;
   justify-content: center;
+  border: 2px solid lightgray;
   min-height: 120px; */
   position: relative;
   background-color: #fff;
@@ -412,6 +412,9 @@ body {
 }
 .mar {
   margin-top: -50px !important;
+}
+.dis {
+  width: 101%;
 }
 
 .time {
