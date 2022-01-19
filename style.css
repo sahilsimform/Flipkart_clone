@@ -277,6 +277,8 @@ body {
 .more:hover .more_lan {
   position: relative;
   top: 7px;
+  bottom: 7px;
+  /* display: block; */
 }
 
 .more_pointer {
@@ -357,6 +359,10 @@ body {
   margin-bottom: 10px;
 }
 
+.time_show {
+  opacity: 0.6;
+}
+
 .deals_of_the_day {
   margin-top: 0px;
   justify-content: space-between;
@@ -435,7 +441,7 @@ body {
   max-height: 366px;
   text-align: center;
   line-height: 1.4;
-  -webkit-user-select: none;
+  /* webkit-user-select: none; */
   text-decoration: none;
   color: inherit;
   border: none;
@@ -443,6 +449,7 @@ body {
   font-size: 14px;
   letter-spacing: 0;
   margin: 0;
+  /* margin-top: 10px !important; */
   outline: none;
 }
 
@@ -480,7 +487,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   color: inherit;
   line-height: 1.4;
 }
@@ -548,4 +555,9 @@ body {
   padding: 0;
   /* -webkit-user-select: none; */
   line-height: 1.4;
+}
+
+.img_card_banner {
+  width: auto !important;
+  height: 100% !important;
 }
