@@ -136,6 +136,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.1px;
   font-weight: 500;
+  /* display: inline-block; */
   /* color: #fff; */
 }
 
@@ -231,7 +232,6 @@ body {
   box-shadow: 0 4px 16px 0 rgb(0 0 0 /20%);
   min-width: 240px;
   transform: translate(-30px);
-  /* transition: transform .1s,-webkit-transform .1s; */
   list-style: none;
   justify-content: space-between;
 }
@@ -276,9 +276,9 @@ body {
 /* .login:hover .login_btn, */
 .more:hover .more_lan {
   position: relative;
-  top: 7px;
-  bottom: 7px;
-  /* display: block; */
+  top: 6px !important;
+  bottom: 6px !important;
+  /* display: inline-block; */
 }
 
 .more_pointer {
@@ -307,8 +307,6 @@ body {
   /* top: 140px; */
   position: absolute;
 }
-
-/* //////////////////////////////////////////////////////////////// */
 
 .box_timer {
   /* height: 100px; */
@@ -349,8 +347,6 @@ body {
   color: #212121;
   line-height: 1.4;
 }
-
-/* //////////////////////////////////////////////////////////////// */
 
 .time {
   font-size: 14px;
@@ -417,16 +413,6 @@ body {
   max-width: 1280px;
   width: 100%;
 }
-
-/* @media screen and (max-width: 900px) and (min-width: 200px) {
-  .deals_of_the_day_list {
-    list-style: none;
-    justify-content: space-around;
-    max-width: 1280px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-} */
 
 .deals_of_the_day_item {
   /* padding: 10px 30px;
